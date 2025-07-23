@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Pets Shop</title>
+    <link rel="icon" href="ds.jpg">
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .head {
+            display: inline-block;
+            background-color: white;
+            font-family: 'Cooper Black';
+            color: rgb(250, 113, 113);
+            margin: 1% 539.5px 0%;
+            width: 390px;
+            padding: 6px;
+            border-radius: 50px;
+        }
+
+        .head {
+            text-align: center;
+        }
+
+        .nav {
+            /* display: inline; */
+            display: block;
+            text-align: left;
+            padding: 1px;
+            padding-left: 40px;
+
+            background-color: rgb(250, 113, 113);
+            color: white;
+        }
+
+        .nav span {
+            color: black;
+        }
+
+        .side button {
+            padding: 10px;
+            margin: 0%;
+            background-color: rgb(250, 113, 113);
+            border: none;
+            font-size: 17px;
+            color: white;
+        }
+
+        .side {
+            text-align: end;
+        }
+
+        .side button:hover {
+            color: black;
+            background-color: rgb(250, 96, 96);
+        }
+
+        .prompt {
+            background-color: indianred;
+            text-align: center;
+            margin: 0px 20px;
+            padding-top: 20px;
+            height: 300px;
+            font-size: 20px;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .content h2 {
+            margin-top: 40px;
+        }
+
+        .box {
+            display: flex;
+            background-color: rgb(252, 67, 67);
+            padding: 20px;
+            margin: 0px 100px;
+            margin-left: 80px;
+            box-shadow: 7px 7px 7px black;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .box p {
+            padding-left: 14px;
+            margin-top: 6%;
+
+            color: white;
+            text-align: center;
+            font-size: 19px;
+            font-weight: bold;
+
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+
+
+        }
+
+
+        .items1 {
+
+            text-align: center;
+            color: white;
+            margin-top: 190px;
+
+            font-weight: bolder;
+            font-size: 25px;
+            font-family: 'Bahnschrift Light';
+            background-color: rgb(252, 67, 67);
+        }
+
+        .items {
+            padding: 7px;
+        }
+
+
+
+        .product-menu {
+            display: inline-block;
+            text-align: center;
+            padding: 30px;
+            background-color: rgb(247, 244, 244);
+            margin: 2%;
+            box-shadow: 0px 7px 7px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .product-menu :hover {
+            transform: scale(1.05);
+        }
+
+        .product button {
+            background-color: rgb(252, 67, 67);
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 9px 28px;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0px 3px 3px black;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .product button:hover {
+            background-color: rgb(242, 57, 57);
+            ;
+            color: black;
+            transform: scale(1.05);
+        }
+
+        .collections {
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0px 4px 7px black;
+            color: rgb(5, 5, 5);
+            padding: 20px;
+            margin: 20px 0px 25px;
+            margin-left: 10px;
+            font-family: 'Bahnschrift Light';
+            font-size: larger;
+            font-weight: bold;
+            background-color: rgb(247, 244, 244);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .collections-items img {
+            box-shadow: 0px 4px 7px grey;
+            border-radius: 2px;
+        }
+
+        .collections:hover {
+            transform: scale(1.03);
+        }
+
+        .collections-items a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .collections-items button {
+            box-shadow: 0px 4px 7px grey;
+            background-color: rgb(252, 67, 67);
+            color: white;
+
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 9px 28px;
+
+            cursor: pointer;
+            box-shadow: 0px 3px 3px black;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .collections-items a:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+        .collections-items button:hover {
+            background-color: rgb(242, 57, 57);
+
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="head">
+            <h1>Sub<span>ram</span>ani P<span>et</span>s S<span>ho</span>p</h1>
+        </div>
+        <div class="side">
+            <a href="simple.html"><button>Home</button></a>
+            <a href="product.html"><button>Pets</button></a>
+            <a href="about.html"><button>About</button></a>
+            <a href="contact.html"><button>Contact us</button></a>
+        </div>
+    </div>
+    <div class="prompt">
+        <div class="img-card">
+            <div class="content">
+                <h2>🐾 Welcome to Subramani Pets Shop 🐾</h2>
+                <h4>Your Trusted Home for Happy Pets!</h4>
+
+                <div class="box" style="position: absolute;margin-top: 50px;">
+                    <img src="Screenshot 2025-07-21 101453.png" alt="pet.image" style="width: 500px;">
+                    <p>
+                        We set up Ivy & Duke on the principle of providing unique and highly customisable
+                        designs that are made from quality and locally sourced materials. Led with the comfort
+                        of our canine companions in mind, we handcraft each of our beds individually to order.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="items1">
+        <h2 class="items">Fabric beds</h2>
+    </div>
+    <div class="collections">
+        <div class="collections-items">
+            <img src="group of dog.jpg" alt="group of dog.jpg" style="width: 450px;">
+            <h2>A pack of Dog</h2>
+            <button><a href="dog.html">View pets</a></button>
+        </div>
+    </div>
+    <div class="collections">
+        <div class="collections-items">
+            <img src="group of cat.jpg" alt="group of cat.jpg" style="width: 450px;">
+            <h2> A clowder of cat</h2>
+            <button><a href="cat.html">View pets</a></button>
+        </div>
+    </div>
+    <div class="collections">
+        <div class="collections-items">
+            <img src="group of fish.jpg" alt="group of fish.jpg" style="width: 450px;">
+            <h2>A shoal of fish</h2>
+            <button><a href="fish.html">View pets</a></button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

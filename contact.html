@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Shop</title>
+    <link rel="icon" href="ds.jpg">
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .head {
+            text-align: center;
+            background-color: white;
+            font-family: 'Cooper Black';
+            color: rgb(250, 113, 113);
+            margin: 1% 539.5px 0%;
+            width: 390px;
+            padding: 6px;
+            border-radius: 50px;
+        }
+
+        .head h1 {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .nav {
+            /* display: inline; */
+            display: block;
+            text-align: left;
+            padding: 1px;
+            padding-left: 40px;
+
+            background-color: rgb(250, 113, 113);
+            color: white;
+        }
+
+        .nav span {
+            color: black;
+        }
+
+        .side button {
+            padding: 10px;
+            margin: 0%;
+            background-color: rgb(250, 113, 113);
+            border: none;
+            font-size: 17px;
+            color: white;
+        }
+
+        .side {
+            text-align: end;
+        }
+
+        .side button:hover {
+            color: black;
+            background-color: rgb(250, 96, 96);
+
+        }
+
+        .address {
+            color: white;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.1rem;
+            background-color: rgb(246, 142, 142);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin: 100px 550px;
+            padding: 10px;
+            border-radius: 35px;
+            background-color: rgb(190, 44, 44);
+            width: 600px;
+            box-shadow: 0px 10px 10px black;
+        }
+        .contact :hover{
+            padding: 2px;
+            box-shadow: px 12px 12px black;
+        }
+
+        .contact td {
+            padding: 12px;
+
+        }
+        .contact input{
+            font-size: 17px;
+            width: 80%;
+            box-shadow: 0px 3px 3px black;
+            border-radius: 5px;
+        }
+        .contact textarea{
+            font-size: 17px;
+            width: 80%;
+            box-shadow: 0px 3px 3px black;
+            border-radius: 5px;
+        }
+
+      .contact td :hover{
+        border: indianred;
+        
+      }
+
+        #name {
+            padding: 5px;
+            border: none;
+            box-shadow: 0px 3px 3px black;
+        }
+
+        .bt {
+            text-align: center;
+        }
+
+        label {
+
+            font-size: 25px;
+        }
+       .contain{
+            padding: 3px;
+       }
+
+
+        .contact button {
+            background-color: rgb(252, 67, 67);
+            border: none;
+            border-radius: 10px;
+            margin: 13px 0PX 12px ;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 9px 28px;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0px 3px 3px black;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .contact button:hover {
+            background-color: rgb(242, 57, 57);
+            color: black;
+            padding: 9px 28px;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="head">
+            <h1>Sub<span>ram</span>ani P<span>et</span>s S<span>ho</span>p</h1>
+        </div>
+        <div class="side">
+            <a href="simple.html"><button>Home</button></a>
+            <a href="product.html"><button>Pets</button></a>
+            <a href="about.html"><button>About</button></a>
+            <a href="contact.html"><button>Contact us</button></a>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contain">
+            <form>
+                <center>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Name : </label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Enter your name..." id="name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label>Ph no : </label> </td>
+                            <td> <input type="text" placeholder="Enter your number..." id="name"></td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td> <label> E-mail : </label></td>
+                            <td> <input type="email" placeholder="Enter your e-mail Id" id="name"></td>
+                        </tr>
+                        <tr>
+                            <td> <label>Suggestion:</label></td>
+                            <td> <textarea rows="5" cols="40" placeholder="Your feedback here..." style="font-size: 15px ;"></textarea></td>
+                        </tr>
+
+
+                    </table>
+                                            <td><button 
+                                onclick="alert('your response have been sumitted')"><a>Submit</a></button></td>
+                </center>
+            </form>
+
+        </div>
+    </div>
+    <div class="address">
+        <h4>📍 Visit Us At:</h4>
+        <p>Subramani Pets Shop,</p>
+        <p>123 Pet Street, Green City, Tamil Nadu - 638001</p>
+        <p>📞 Contact: +91 98765 43210</p>
+    </div>
+</body>
+
+</html>
