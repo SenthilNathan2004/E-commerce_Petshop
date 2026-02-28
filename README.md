@@ -28,24 +28,3 @@ This project includes a dynamic product system, working Add to Cart functionalit
 
 ## 📁 Project Structure
 
-
-E-commerce_Petshop/
-│
-├── src/
-│ ├── assets/
-│ │ ├── Dogs/
-│ │ ├── Cats/
-│ │ ├── Fishs/
-│ │ └── icons/
-│ │
-│ ├── index.html
-│ ├── product.html
-│ ├── dog.html
-│ ├── cat.html
-│ ├── fish.html
-│ ├── about.html
-│ ├── contact.html
-│ ├── style.css
-│ └── script.js
-│
-└── README.md
