@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cats - Subramani Pets Shop</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* NAVBAR */
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#1e293b;
+    color:white;
+}
+
+.nav h1 span{
+    color:#38bdf8;
+}
+
+.menu a button{
+    margin-left:15px;
+    padding:8px 16px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.menu a button:hover{
+    background:#0284c7;
+}
+
+/* HEADER */
+.shop-header{
+    text-align:center;
+    padding:25px;
+    font-size:28px;
+    font-weight:bold;
+    background:#38bdf8;
+    color:white;
+}
+
+/* PRODUCT GRID */
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:40px 60px;
+}
+
+.product-card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+    text-align:center;
+}
+
+.product-info h2{
+    margin-bottom:10px;
+}
+
+.product-info p{
+    color:#38bdf8;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.product-info button{
+    padding:10px 25px;
+    border:none;
+    background:#1e293b;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.product-info button:hover{
+    background:#0284c7;
+}
+
+/* FOOTER */
+.footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+    <h1>Sub<span>ram</span>ani P<span>et</span>s S<span>ho</span>p</h1>
+    <div class="menu">
+        <a href="index.html"><button>Home</button></a>
+        <a href="product.html"><button>Pets</button></a>
+        <a href="about.html"><button>About</button></a>
+        <a href="contact.html"><button>Contact</button></a>
+    </div>
+</div>
+
+<div class="shop-header">Cats Collection</div>
+
+<div class="product-grid">
+
+    <div class="product-card">
+        <img src="assets/Cats/Cat-1.jpg">
+        <div class="product-info">
+            <h2>Persian</h2>
+            <p>$180</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Cats/Cat-2.jpg">
+        <div class="product-info">
+            <h2>Siamese</h2>
+            <p>$110</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Cats/Cat-3.jpg">
+        <div class="product-info">
+            <h2>Maine Coon</h2>
+            <p>$150</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Cats/Cat-4.jpg">
+        <div class="product-info">
+            <h2>British Shorthair</h2>
+            <p>$190</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Cats/Cat-5.jpg">
+        <div class="product-info">
+            <h2>Scottish Fold</h2>
+            <p>$140</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Cats/Cat-6.jpg">
+        <div class="product-info">
+            <h2>Abyssinian</h2>
+            <p>$230</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 Subramani Pets Shop | Tiruchengode, Tamil Nadu
+</div>
+
+</body>
+</html>

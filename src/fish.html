@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fish Collection - Subramani Pets Shop</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* NAVBAR */
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#1e293b;
+    color:white;
+}
+
+.nav h1 span{
+    color:#38bdf8;
+}
+
+.menu button{
+    margin-left:15px;
+    padding:8px 16px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.menu button:hover{
+    background:#0284c7;
+}
+
+/* HEADER */
+.shop-header{
+    text-align:center;
+    padding:25px;
+    font-size:28px;
+    font-weight:bold;
+    background:#38bdf8;
+    color:white;
+}
+
+/* PRODUCTS */
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:40px 60px;
+}
+
+.product-card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-6px);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+    text-align:center;
+}
+
+.product-info h2{
+    margin-bottom:8px;
+}
+
+.product-info p{
+    color:#38bdf8;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.product-info button{
+    padding:10px 25px;
+    border:none;
+    background:#1e293b;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.product-info button:hover{
+    background:#334155;
+}
+
+/* FOOTER */
+.footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="nav">
+    <h1>Sub<span>ram</span>ani P<span>et</span>s S<span>ho</span>p</h1>
+    <div class="menu">
+        <a href="index.html"><button>Home</button></a>
+        <a href="product.html"><button>Pets</button></a>
+        <a href="about.html"><button>About</button></a>
+        <a href="contact.html"><button>Contact</button></a>
+    </div>
+</div>
+
+<!-- HEADER -->
+<div class="shop-header">🐠 Fish Collection</div>
+
+<!-- PRODUCTS -->
+<div class="product-grid">
+
+    <div class="product-card">
+        <img src="assets/Fishs/Fish-1.jpg" alt="Goldfish">
+        <div class="product-info">
+            <h2>Goldfish</h2>
+            <p>₹300</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Fishs/Fish-2.jpg" alt="Guppy">
+        <div class="product-info">
+            <h2>Guppy</h2>
+            <p>₹150</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Fishs/Fish-3.jpg" alt="Betta Fish">
+        <div class="product-info">
+            <h2>Betta Fish</h2>
+            <p>₹250</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Fishs/Fish-4.jpg" alt="Angelfish">
+        <div class="product-info">
+            <h2>Angelfish</h2>
+            <p>₹450</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Fishs/Fish-5.jpg" alt="Molly Fish">
+        <div class="product-info">
+            <h2>Molly Fish</h2>
+            <p>₹200</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Fishs/Fish-6.jpg" alt="Platy Fish">
+        <div class="product-info">
+            <h2>Platy Fish</h2>
+            <p>₹180</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Fishs/Fish-7.jpg" alt="Oscar Fish">
+        <div class="product-info">
+            <h2>Oscar Fish</h2>
+            <p>₹650</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/Fishs/Fish-8.jpg" alt="Neon Tetra">
+        <div class="product-info">
+            <h2>Neon Tetra</h2>
+            <p>₹120</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Subramani Pets Shop | Tiruchengode, Tamil Nadu
+</div>
+
+</body>
+</html>

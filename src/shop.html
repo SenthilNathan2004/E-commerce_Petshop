@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subramani Pets Shop - Shop</title>
+<link rel="icon" href="assests/icons/icon-1.jpg">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Times New Roman', Times, serif;background:#f8f8f8;}
+.nav{display:flex;justify-content:space-between;align-items:center;background:rgb(250,113,113);padding:10px 40px;color:white;}
+.nav h1{font-family:'Cooper Black';font-size:24px;}
+.nav h1 span{color:black;}
+.nav .menu a{text-decoration:none;margin-left:15px;}
+.nav .menu button{padding:10px 15px;background:rgb(250,113,113);border:none;color:white;cursor:pointer;border-radius:5px;transition:0.3s;}
+.nav .menu button:hover{background:rgb(242,57,57);color:black;}
+.shop-container{max-width:900px;margin:30px auto;padding:0 15px;}
+.carousel{position:relative;width:100%;height:400px;overflow:hidden;border-radius:10px;margin-bottom:20px;}
+.carousel img{width:100%;height:100%;object-fit:cover;display:none;}
+.carousel img.active{display:block;}
+.carousel-buttons{position:absolute;top:50%;width:100%;display:flex;justify-content:space-between;transform:translateY(-50%);}
+.carousel-buttons span{cursor:pointer;background:rgba(0,0,0,0.3);color:white;padding:5px 10px;border-radius:50%;font-size:24px;}
+.product-info h2{color:rgb(252,67,67);margin-bottom:15px;}
+.product-info p{color:rgb(250,113,113);font-weight:bold;margin-bottom:20px;font-size:20px;}
+.product-info button{padding:10px 20px;background:rgb(252,67,67);border:none;border-radius:5px;color:white;font-weight:bold;cursor:pointer;transition:0.3s;}
+.product-info button:hover{background:rgb(242,57,57);color:black;}
+.related-products{margin:50px 0;}
+.related-products h2{text-align:center;color:rgb(250,113,113);margin-bottom:20px;}
+.related-container{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.related-card{text-align:center;width:180px;}
+.related-card img{width:100%;border-radius:10px;}
+footer{background:rgb(250,113,113);color:white;text-align:center;padding:15px;margin-top:30px;}
+footer a{color:white;text-decoration:none;margin:0 5px;}
+footer a:hover{color:black;}
+</style>
+</head>
+<body>
+
+<div class="nav">
+<h1>Sub<span>ram</span>ani P<span>et</span>s S<span>ho</span>p</h1>
+<div class="menu">
+<a href="index.html"><button>Home</button></a>
+<a href="product.html"><button>Products</button></a>
+<a href="about.html"><button>About</button></a>
+<a href="contact.html"><button>Contact</button></a>
+</div>
+</div>
+
+<div class="shop-container">
+<div class="carousel" id="carousel">
+<!-- Images will be loaded dynamically -->
+</div>
+<div class="product-info">
+<h2 id="shop-name"></h2>
+<p id="shop-price"></p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<div class="related-products">
+<h2>Related Products</h2>
+<div class="related-container">
+<!-- Static related products -->
+<div class="related-card">
+<img src="assests/Cats/Cat-1.jpg" alt="Persian Cat">
+<h3>Persian Cat</h3>
+<p>$180</p>
+</div>
+<div class="related-card">
+<img src="assests/Fishs/Fish-1.jpg" alt="Neptune Fish">
+<h3>Neptune Fish</h3>
+<p>$120</p>
+</div>
+<div class="related-card">
+<img src="assests/Dogs/Dog-7.jpg" alt="Beauceron">
+<h3>Beauceron</h3>
+<p>$110</p>
+</div>
+</div>
+</div>
+
+<footer>
+<p>Subramani Pets Shop | Address: 123 Pet Street, Tiruchengode, Tamil Nadu | 
+Follow us on 
+<a href="#">Instagram</a> | 
+<a href="#">Facebook</a> | 
+<a href="#">Twitter</a>
+</p>
+</footer>
+
+<script>
+// Get query params
+const params = new URLSearchParams(window.location.search);
+const productName = params.get('name');
+const productPrice = params.get('price');
+const productType = params.get('type');
+const productImages = params.get('images').split(',');
+
+// Fill product info
+document.getElementById('shop-name').textContent = productName;
+document.getElementById('shop-price').textContent = "$" + productPrice;
+
+const carousel = document.getElementById('carousel');
+
+// Load images dynamically
+productImages.forEach((imgName, idx)=>{
+    const img = document.createElement('img');
+    img.src = `assests/${productType.charAt(0).toUpperCase()+productType.slice(1)}s/${imgName}`;
+    img.alt = imgName;
+    if(idx===0) img.classList.add('active');
+    carousel.appendChild(img);
+});
+
+// Carousel buttons
+const prevBtn = document.createElement('span');
+prevBtn.innerHTML = '&#10094;';
+prevBtn.classList.add('carousel-prev');
+prevBtn.onclick = ()=>slide('prev');
+const nextBtn = document.createElement('span');
+nextBtn.innerHTML = '&#10095;';
+nextBtn.classList.add('carousel-next');
+nextBtn.onclick = ()=>slide('next');
+const btnsDiv = document.createElement('div');
+btnsDiv.classList.add('carousel-buttons');
+btnsDiv.appendChild(prevBtn);
+btnsDiv.appendChild(nextBtn);
+carousel.appendChild(btnsDiv);
+
+let currentIndex = 0;
+function slide(direction){
+    const imgs = carousel.getElementsByTagName('img');
+    imgs[currentIndex].classList.remove('active');
+    if(direction==='next') currentIndex = (currentIndex+1)%imgs.length;
+    else currentIndex = (currentIndex-1+imgs.length)%imgs.length;
+    imgs[currentIndex].classList.add('active');
+}
+</script>
+
+</body>
+</html>

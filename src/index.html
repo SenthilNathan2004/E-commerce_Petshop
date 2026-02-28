@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Subramani Pets Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* NAVBAR */
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#1e293b;
+    color:white;
+}
+
+.nav h1 span{
+    color:#38bdf8;
+}
+
+.side button{
+    margin-left:15px;
+    padding:8px 16px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    cursor:pointer;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.side button:hover{
+    background:#0284c7;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero img{
+    width:400px;
+    margin-top:30px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:20px auto;
+    line-height:1.6;
+    color:#555;
+}
+
+/* COLLECTION TITLE */
+.items{
+    text-align:center;
+    margin-top:40px;
+    font-size:28px;
+}
+
+/* COLLECTION CONTAINER */
+.collections-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:40px;
+    flex-wrap:wrap;
+}
+
+/* COLLECTION CARD */
+.collections-items{
+    background:white;
+    padding:px;
+    width:350px;
+    height:320px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.collections-items:hover{
+    transform:translateY(-10px);
+}
+
+/* IMAGE BOX */
+.image-box{
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f1f5f9;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+/* DULL IMAGE STYLE */
+.image-box img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    filter:brightness(85%);
+    transition:0.3s;
+}
+
+/* Slight brighten on hover */
+.collections-items:hover img{
+    filter:brightness(100%);
+}
+
+.collections-items button{
+    padding:10px 20px;
+    border:none;
+    background:#1e293b;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    margin-bottom: 10px;
+}
+
+.collections-items button:hover{
+    background:#334155;
+}
+
+/* FOOTER */
+.footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+.footer p{
+    margin:5px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+    <h1>Sub<span>ram</span>ani P<span>et</span>s S<span>ho</span>p</h1>
+    <div class="side">
+        <a href="index.html"><button>Home</button></a>
+        <a href="product.html"><button>Pets</button></a>
+        <a href="about.html"><button>About</button></a>
+        <a href="contact.html"><button>Contact Us</button></a>
+    </div>
+</div>
+
+<div class="hero">
+    <h2>🐾 Welcome to Subramani Pets Shop 🐾</h2>
+    <h4>Your Trusted Home for Happy Pets!</h4>
+    <img src="assets/icons/icon-2.png" alt="Pet Image">
+    <p>
+        We provide unique and highly customizable pet products made from quality and locally sourced materials.
+        Our mission is to ensure happiness, health, and comfort for every pet that becomes part of your family.
+    </p>
+</div>
+
+<h2 class="items">Our Pet Collections</h2>
+
+<div class="collections-container">
+
+    <div class="collections-items">
+        <div class="image-box">
+            <img src="assets/Groups of Animals/group of dog.jpg" alt="Dogs">
+        </div>
+        <h2>A Pack of Dogs</h2>
+        <a href="dog.html"><button>View Pets</button></a>
+    </div>
+
+    <div class="collections-items">
+        <div class="image-box">
+            <img src="assets/Groups of Animals/group of cat.jpg" alt="Cats">
+        </div>
+        <h2>A Clowder of Cats</h2>
+        <a href="cat.html"><button>View Pets</button></a>
+    </div>
+
+    <div class="collections-items">
+        <div class="image-box">
+            <img src="assets/Groups of Animals/group of fish.jpg" alt="Fish">
+        </div>
+        <h2>A Shoal of Fish</h2>
+        <a href="fish.html"><button>View Pets</button></a>
+    </div>
+
+</div>
+
+<div class="footer">
+    <h3>📍 Our Address</h3>
+    <p>Subramani Pets Shop</p>
+    <p>123, Main Road, Erode, Tamil Nadu - 638001</p>
+    <p>📞 +91 9876543210</p>
+</div>
+
+</body>
+</html>

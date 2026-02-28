@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Subramani Pets Shop - Products</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* NAVBAR */
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#1e293b;
+    color:white;
+}
+
+.nav h1 span{
+    color:#38bdf8;
+}
+
+.nav button{
+    margin-left:15px;
+    padding:8px 16px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.nav button:hover{
+    background:#0284c7;
+}
+
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    margin:40px 0 20px;
+    font-size:28px;
+    color:#1e293b;
+}
+
+/* PRODUCT GRID */
+.products-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    padding:20px 40px;
+}
+
+.product-card{
+    background:white;
+    width:240px;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.product-card h3{
+    margin:10px 0 5px;
+}
+
+.price{
+    color:#38bdf8;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.product-card button{
+    background:#1e293b;
+    border:none;
+    padding:8px 18px;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.product-card button:hover{
+    background:#334155;
+}
+
+/* FOOTER */
+.footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+    <h1>Sub<span>ram</span>ani P<span>et</span>s S<span>ho</span>p</h1>
+    <div>
+        <a href="index.html"><button>Home</button></a>
+        <a href="product.html"><button>Pets</button></a>
+        <a href="about.html"><button>About</button></a>
+        <a href="contact.html"><button>Contact</button></a>
+    </div>
+</div>
+
+<!-- DOGS -->
+<h2 class="section-title">🐶 A Pack of Dogs</h2>
+<div class="products-container">
+
+<!-- Dogs 1-8 -->
+<script>
+const dogs = [
+["Dog-1.jpg","Buddy",80],
+["Dog-2.jpg","Charlie",120],
+["Dog-3.jpg","Max",90],
+["Dog-4.jpg","Rocky",100],
+["Dog-5.jpg","Rex",150],
+["Dog-6.jpg","Toby",130],
+["Dog-7.jpg","Leo",110],
+["Dog-8.jpg","Cooper",220]
+];
+
+document.write(dogs.map(d => `
+<div class="product-card">
+<img src="assets/Dogs/${d[0]}" alt="${d[1]}">
+<h3>${d[1]}</h3>
+<div class="price">$${d[2]}</div>
+<button>Add to Cart</button>
+</div>
+`).join(""));
+</script>
+
+</div>
+
+<!-- CATS -->
+<h2 class="section-title">🐱 A Clowder of Cats</h2>
+<div class="products-container">
+
+<script>
+const cats = [
+["Cat-1.jpg","Luna",180],
+["Cat-2.jpg","Milo",110],
+["Cat-3.jpg","Simba",150],
+["Cat-4.jpg","Chloe",190],
+["Cat-5.jpg","Bella",140],
+["Cat-6.jpg","Oliver",230]
+];
+
+document.write(cats.map(c => `
+<div class="product-card">
+<img src="assets/Cats/${c[0]}" alt="${c[1]}">
+<h3>${c[1]}</h3>
+<div class="price">$${c[2]}</div>
+<button>Add to Cart</button>
+</div>
+`).join(""));
+</script>
+
+</div>
+
+<!-- FISH -->
+ 
+<h2 class="section-title">🐟 A Shoal of Fish</h2>
+<div class="products-container">
+
+<script>
+const fish = [
+["Fish-1.jpg","Neptune",120],
+["Fish-2.jpg","Lagoon",140],
+["Fish-3.jpg","Raindrop",90],
+["Fish-4.jpg","Coral",130],
+["Fish-5.jpg","Splash",160],
+["Fish-6.jpg","Bubbles",110],
+["Fish-7.jpg","Finley",170],
+["Fish-8.jpg","Splashy",190],
+["Fish-9.jpg","Aqua",200]
+];
+
+document.write(fish.map(f => `
+<div class="product-card">
+<img src="assets/Fishs/${f[0]}" alt="${f[1]}">
+<h3>${f[1]}</h3>
+<div class="price">$${f[2]}</div>
+<button>Add to Cart</button>
+</div>
+`).join(""));
+</script>
+
+</div>
+
+
+<div class="footer">
+<p>Subramani Pets Shop</p>
+<p>123 Pet Street, Tiruchengode, Tamil Nadu</p>
+<p>📞 +91 9876543210</p>
+</div>
+
+</body>
+</html>
